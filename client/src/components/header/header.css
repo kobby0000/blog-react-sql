@@ -1,0 +1,55 @@
+.navbar {
+    background-color: red;
+}
+
+.navbar_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links span {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.links .write {
+    padding: 10px;
+    border: 1px solid var(--primary_color);
+    background-color: var(--teal_color);
+    color: var(--teal_color);
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.links .write:hover {
+    background-color: white;
+    color: var(--teal_color);
+    border: 1px solid var(--teal_color);
+}
+
+.links .write span {
+    padding-right: 5px;
+    font-size: 14px;
+}
+
+.links .link h6 {
+    font-size: 16px;
+    font-weight: 400;
+}

@@ -1,0 +1,80 @@
+
+//REGISTER && LOGIN PAGES STYLES
+.app {
+    // background-color: var(--primary_color);
+        .login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: var(--primary_color);
+
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: teal;
+                margin-bottom: 1rem;
+            }
+
+            button {
+                color: #fff;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 250px;
+            background-color: #fff;
+            padding: 2rem 1rem;
+            border-radius: 5px;
+
+
+            input {
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid gray;
+                width: 100%;
+                outline: none;
+            }
+
+            &:hover,
+            :focus-within {
+                input {
+                    border-bottom: 1px solid teal;
+                }
+            }
+
+            button {
+                padding: 10px;
+                background: teal;
+                width: 100%;
+                transition: var(--transition);
+
+                &:hover {
+                    transform: scale(.95);
+                }
+            }
+
+            p {
+                color: red;
+                font-size: 12px;
+            }
+
+            span {
+                font-size: 12px;  
+                
+                a {
+                    color: teal;
+                    font-weight: 500;
+
+                    &:hover,
+                    &:focus {
+                        opacity: .8;
+                    }
+                }
+                }
+        }
+
+}
