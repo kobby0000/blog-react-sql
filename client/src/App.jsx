@@ -1,5 +1,7 @@
-import React from 'react'
+import { useContext,Suspense } from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { AuthContext } from './context/authContext.jsx'
+import Loading from './components/loading/Loading.jsx'
 
 //LAYOUT
 import Layout from './Layouts/Layout.jsx'
@@ -7,10 +9,11 @@ import Layout from './Layouts/Layout.jsx'
 //PAGES
 import { Blog, ErrorPage, Home, Login, Register, Single, Write } from './pages/index.js'
 
+
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout />,
+    element:(<Suspense> <Layout /></Suspense>),
     children: [
       { index: true, element: <Home /> },
       { path: 'post/:id', element: <Single /> },
@@ -33,8 +36,10 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+  const { isLoading } = useContext(AuthContext);
     return (
   <div className="app">
+    {isLoading && <Loading message="Processing your request..." />}
      <RouterProvider router={router} />
   </div>
     )

@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap');
 
 :root {
-  --primary_color: #b9e7e7;
+  --primary_color: rgb(127, 56, 74);
   --primary_color_hover: #535bf2;
-  --background_color: #1a1a1a;
-  --text_color: #484848;
+  --black_color: rgb(15, 16, 21);
+  --yellow_color: rgb(210, 161, 58);
+  --text_color: rgb(64, 67, 72);
   --transition: 300ms ease-in-out;
-  --teal_color: teal;
+  --teal_color: rgb(35, 81, 81);
+  --light_brown: rgb(200, 156, 118);
 }
 
 * {
@@ -18,10 +21,7 @@
 a {
   text-decoration: none;
   color: inherit;
-}
-
-a:hover {
-  color: #535bf2;
+  color: var(--text_color);
 }
 
 body {
@@ -29,18 +29,20 @@ body {
   color: var(--text_color);
   /* font-family: "Lato", sans-serif; */
   font-family: "Jost", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
 
 p {
   font-size: 14px;
   line-height: 1.2;
+  color:var(--text_color);
 }
 
 h1,
 h2,
 h3{
-  font-family: "Jost", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 2em;
   line-height: 1.1;
 }
@@ -58,7 +60,7 @@ img {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0 1em ;
 }

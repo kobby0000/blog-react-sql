@@ -1,5 +1,10 @@
-.navbar {
-    background-color: red;
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    background-color:  rgba(0, 0, 0,.5);
 }
 
 .navbar_wrapper {
@@ -22,19 +27,35 @@
     gap: 10px;
 }
 
+.links a {
+    color: var(--light_brown);
+    color: #fff;
+    transition: var(--transition);
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.links a:hover,
+.links a:focus {
+    color: var(--light_brown);
+}
+
 .links span {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
 }
 
 .links .write {
-    padding: 10px;
-    border: 1px solid var(--primary_color);
-    background-color: var(--teal_color);
+    padding: 7px 8px;
+    border: 1px solid var(--light_brown);
+    background-color: var(--light_brown);
     color: var(--teal_color);
     color: white;
     border-radius: 10px;
     font-size: 14px;
+    font-weight: 200;
     transition: var(--transition);
 }
 
@@ -47,9 +68,15 @@
 .links .write span {
     padding-right: 5px;
     font-size: 14px;
+    font-weight: 200;
+    transition: all var(--transition);
+}
+
+.links .write span:hover  {
+    color: var(--teal_color);
 }
 
 .links .link h6 {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 200;
 }

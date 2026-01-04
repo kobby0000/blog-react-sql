@@ -13,7 +13,7 @@
             h1 {
                 font-size: 1.5rem;
                 font-weight: 400;
-                color: teal;
+                color: var(--teal_color);
                 margin-bottom: 1rem;
             }
 
@@ -42,13 +42,13 @@
             &:hover,
             :focus-within {
                 input {
-                    border-bottom: 1px solid teal;
+                    border-bottom: 1px solid var(--teal_color);
                 }
             }
 
             button {
                 padding: 10px;
-                background: teal;
+                background: var(--teal_color);
                 width: 100%;
                 transition: var(--transition);
 
@@ -60,13 +60,14 @@
             p {
                 color: red;
                 font-size: 12px;
+                text-align: center;
             }
 
             span {
                 font-size: 12px;  
                 
                 a {
-                    color: teal;
+                    color: var(--teal_color);
                     font-weight: 500;
 
                     &:hover,

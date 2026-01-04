@@ -2,11 +2,15 @@
  footer {
     margin-top: 2rem;
     padding: 20px;
-    background-color: var(--primary_color);
+    background-color: var(--text_color);
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 12px;
+ }
+
+ footer span {
+   color: #fff;
  }
 
  footer img{

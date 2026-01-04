@@ -1,0 +1,32 @@
+.menu {
+    margin-top: 2rem;
+}
+
+.menu > h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+.menu .posts {
+    margin-bottom: 20px;
+}
+
+.menu .posts img {
+    border-radius: 10px;
+}
+
+.menu .posts h2 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: .8rem 0;
+}
+
+.menu button{
+    background: var(--light_brown);
+    transition: var(--transition);
+}
+
+.menu button:hover,
+.menu button:focus {
+    background: #fff;
+}
